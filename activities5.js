@@ -29,8 +29,8 @@ const coffeeShop = {
     food: ["Bacon roll", 3.30, "Donut", 1.50, "egg", 1.20 ],
     drinkOrdered(drink) {
         if (this.drink.includes(drink)) {
-            const priceArray = this.drink.indexOf(drink) + 1;
-            const price = this.drink[priceArray];
+            const itemPrice = this.drink.indexOf(drink) + 1;
+            const price = this.drink[itemPrice];
             return `Your order is ${drink}. Price: £${price}`;
         } else {
             return "Invalid drink selection.";
@@ -38,14 +38,14 @@ const coffeeShop = {
     },
     foodOrdered(food) {
         if (this.food.includes(food)) {
-            const priceArray = this.food.indexOf(food) + 1;
-            const price = this.food[priceArray];
-            return `Your order is ${food}. Price: £${price}`;
+            const itemPrice = this.food.indexOf(food) + 1;
+            const price = this.food[itemPrice];
+            return `Your order is ${food}. The price is: £${price}`;
         } else {
             return "Invalid drink selection.";
         }
     }
 };
 
-console.log(coffeeShop.drinkOrdered("Tea",));
+console.log(coffeeShop.drinkOrdered("Latte",));
 console.log(coffeeShop.foodOrdered("Donut",));
