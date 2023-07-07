@@ -42,7 +42,7 @@ const coffeeShop = {
             const price = this.food[itemPrice];
             return `Your order is ${food}. The price is: £${price}`;
         } else {
-            return "Invalid drink selection.";
+            return "Invalid Food selection.";
         }
     }
 };
