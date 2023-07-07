@@ -57,7 +57,7 @@
 //   }
 // }
 
-// console.log(mutualFollowers);
+console.log(mutualFollowers);
 
 // for loop iterates a fixed number of times using 3 elements. used if you know how many times you want to loop
 // while loop loops through code using a condition if the condition is true, evaluates the condition first 
